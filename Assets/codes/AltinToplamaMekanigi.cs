@@ -14,14 +14,11 @@ public class AltinToplamaMekanigi : MonoBehaviour
     {
       goldTxt.text=$"Gold={DataBase.AltinSayisi}";
     }
-
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
       transform.Rotate(donmeYonu);
     }
-
-
 private void OnTriggerEnter(Collider other)
 {    
   if (other.gameObject.tag =="Player")
@@ -31,6 +28,5 @@ private void OnTriggerEnter(Collider other)
     goldTxt.text=$"Gold={DataBase.AltinSayisi}";
     Debug.Log(DataBase.AltinSayisi);
   }
-   
 }
 }
